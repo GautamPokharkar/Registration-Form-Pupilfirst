@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+
+<div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold mb-4">Registration Form</h2>
+    <form id="registrationForm" action="#" method="post">
+        <label class="block mb-2" for="name">Name:</label>
+        <input class="w-full p-2 border border-gray-300 rounded mb-4" type="text" id="name" name="name" required>
+
+        <label class="block mb-2" for="email">Email:</label>
+        <input class="w-full p-2 border border-gray-300 rounded mb-4" type="email" id="email" name="email" required>
+
+        <label class="block mb-2" for="password">Password:</label>
+        <input class="w-full p-2 border border-gray-300 rounded mb-4" type="password" id="password" name="password" required>
+
+        <label class="block mb-2" for="dob">Date of Birth:</label>
+        <input class="w-full p-2 border border-gray-300 rounded mb-4" type="date" id="dob" name="dob" required>
+
+        <div class="flex items-center mb-4">
+            <input class="mr-2" type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I accept the terms and conditions</label>
+        </div>
+
+        <button class="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600" type="submit">Submit</button>
+    </form>
+</div>
+
+<div class="mt-6 max-w-md mx-auto text-center">
+    <h3 class="text-xl font-bold">Entries</h3>
+</div>
+<table class="mt-2 w-full bg-white shadow-md rounded-lg overflow-hidden">
+    <thead>
+        <tr class="bg-gray-200">
+            <th class="p-3">Name</th>
+            <th class="p-3">Email</th>
+            <th class="p-3">Password</th>
+            <th class="p-3">Dob</th>
+            <th class="p-3">Accepted terms?</th>
+        </tr>
+    </thead>
+    <tbody id="registrationTableBody">
+        <!-- New entries will be added here -->
+    </tbody>
+</table>
+
+<script src="index.js"></script>
+
+</body>
+</html>
