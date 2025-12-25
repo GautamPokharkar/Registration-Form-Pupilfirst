@@ -38,6 +38,4 @@ A simple **frontend registration form** built using **HTML, Tailwind CSS, and Ja
 
 ---
 
-## 📌 Note
 
-This project is intended as a **basic frontend exercise** to practice JavaScript DOM manipulation, form validation, and client-side storage.
